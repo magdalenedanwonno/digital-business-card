@@ -1,5 +1,5 @@
 
-export default {
+const data = {
   name: "Danwonno Mary-Magdalene",
   role: "Frontend Developer",
   website: "magdalenedanwonnno.dev",
@@ -9,3 +9,5 @@ export default {
   interests: "Foodie. Crocheting. Music. Reading. Tech. Coffee. Creativity.",
   image: "./profile.png" 
 }
+
+export default data
