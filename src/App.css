@@ -1,0 +1,122 @@
+
+/* Centering the card on the page */
+body {
+  margin: 0;
+  background: #23252c;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* The Responsive Card */
+.card {
+  /* This is the key change for mobile-first design */
+  width: 90%; 
+  max-width: 317px; 
+  
+  background: #1a1b21;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  margin: 20px 0; /* Adds a little breathing room on top/bottom for mobile */
+}
+
+.profile-img {
+  width: 100%;
+  height: auto; /* Changed to auto to maintain aspect ratio as it scales */
+  max-height: 317px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Typography and Spacing */
+h1 { 
+  margin: 20px 0 0; 
+  font-size: 25px; 
+}
+
+h3 { 
+  color: #f3bf99; 
+  margin: 5px 0; 
+  font-weight: 400; 
+  font-size: 13px; 
+}
+
+.website { 
+  font-size: 11px; 
+  color: #f5f5f5; 
+  margin-bottom: 15px; 
+}
+
+/* Interactive Elements */
+.buttons { 
+  display: flex; 
+  justify-content: center; 
+  gap: 15px; 
+  padding: 0 20px; 
+}
+
+.btn {
+  flex: 1;
+  padding: 9px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.email { background: white; color: #374151; }
+.linkedin { background: #5093e2; color: white; }
+
+/* Content Sections */
+.section { 
+  text-align: left; 
+  padding: 20px 35px; 
+}
+
+.section h2 { 
+  font-size: 16px; 
+  margin-bottom: 5px; 
+}
+
+.section p { 
+  font-size: 10px; 
+  color: #dcdcdc; 
+  line-height: 1.5; 
+  margin: 0; 
+}
+
+/* Footer Styling */
+.footer {
+  background: #161619;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.footer a {
+  color: #918e9b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: white;
+}
